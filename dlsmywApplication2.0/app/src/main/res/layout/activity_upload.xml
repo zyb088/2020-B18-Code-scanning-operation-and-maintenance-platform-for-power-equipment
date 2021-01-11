@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".UserActivity"
+    android:orientation="vertical"
+    >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <include layout="@layout/title"></include>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="4"
+            android:background="#8FDFF3" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="2"
+            android:background="#FFF" />
+
+        <include layout="@layout/bottom_title"></include>
+
+
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="430dp"
+        android:fillViewport="true"
+        android:scrollbars="vertical"
+        android:layout_marginTop="80dp">
+
+        <LinearLayout
+            android:layout_width="380dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:background="@drawable/background_linear"
+            android:orientation="vertical">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="100dp"
+                    android:layout_height="40dp"
+                    android:layout_marginLeft="50dp"
+                    android:gravity="center_vertical"
+                    android:text="设备名称"
+                    android:textSize="20sp" />
+
+                <EditText
+                    android:id="@+id/eq_name"
+                    android:layout_width="200dp"
+                    android:layout_height="40dp"
+                    android:gravity="center_vertical"
+                    android:hint="请输入设备名称"
+                    android:singleLine="true"></EditText>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="100dp"
+                    android:layout_height="40dp"
+                    android:layout_marginLeft="50dp"
+                    android:gravity="center_vertical"
+                    android:text="设备编号"
+                    android:textSize="20sp" />
+
+                <EditText
+                    android:id="@+id/eq_id"
+                    android:layout_width="200dp"
+                    android:layout_height="40dp"
+                    android:gravity="center_vertical"
+                    android:hint="请输入设备编号"
+                    android:singleLine="true"></EditText>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="100dp"
+                    android:layout_height="40dp"
+                    android:layout_marginLeft="50dp"
+                    android:gravity="center_vertical"
+                    android:text="所在位置"
+                    android:textSize="20sp" />
+
+                <EditText
+                    android:id="@+id/eq_adress"
+                    android:layout_width="200dp"
+                    android:layout_height="40dp"
+                    android:gravity="center_vertical"
+                    android:hint="请输入设备所在位置"
+                    android:singleLine="true"></EditText>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="100dp"
+                    android:layout_height="40dp"
+                    android:layout_marginLeft="50dp"
+                    android:gravity="center_vertical"
+                    android:text="故障上报人"
+                    android:textSize="18sp" />
+
+                <EditText
+                android:id="@+id/up_name"
+                    android:layout_width="200dp"
+                    android:layout_height="40dp"
+                    android:gravity="center_vertical"
+                    android:hint="请输入设备管理人"
+                    android:singleLine="true"></EditText>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="100dp"
+                    android:layout_height="40dp"
+                    android:layout_marginLeft="50dp"
+                    android:gravity="center_vertical"
+                    android:text="联系方式"
+                    android:textSize="20sp" />
+
+                <EditText
+                    android:id="@+id/up_num"
+                    android:layout_width="200dp"
+                    android:layout_height="40dp"
+                    android:gravity="center_vertical"
+                    android:hint="请输入联系方式"
+                    android:singleLine="true"></EditText>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="145dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="100dp"
+                    android:layout_height="40dp"
+                    android:layout_marginLeft="50dp"
+                    android:text="故障描述"
+                    android:textSize="20sp" />
+                <EditText
+                    android:id="@+id/fault"
+                    android:layout_width="200dp"
+                    android:layout_height="140dp"
+                    android:hint="请输入故障"
+                    android:gravity="start"
+                    ></EditText>
+
+            </LinearLayout>
+
+
+
+
+
+        </LinearLayout>
+    </ScrollView>
+
+
+    <Button
+        android:id="@+id/submit"
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:text="SUBMIT"
+        android:background="@drawable/button_dra2"
+        android:layout_marginTop="525dp"
+        android:layout_marginLeft="100dp"
+        android:textColor="@color/darkblue"></Button>
+</RelativeLayout>

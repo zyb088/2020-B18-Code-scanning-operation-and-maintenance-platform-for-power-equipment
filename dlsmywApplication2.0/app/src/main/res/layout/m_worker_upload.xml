@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    >
+    //需要移植
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <include layout="@layout/title"></include>
+
+        <LinearLayout
+            android:layout_width="380dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:background="@drawable/background_linear"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="70dp"
+                    android:layout_height="40dp"
+                    android:layout_marginLeft="20dp"
+                    android:gravity="center_vertical"
+                    android:text="设备编号"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:id="@+id/id_show"
+                    android:layout_width="230dp"
+                    android:layout_height="40dp"
+                    android:gravity="center_vertical"
+                    android:text="设备编号显示"
+                    />
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="70dp"
+                    android:layout_height="40dp"
+                    android:layout_marginLeft="20dp"
+                    android:gravity="center_vertical"
+                    android:text="联系方式"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:id="@+id/phone_show"
+                    android:layout_width="230dp"
+                    android:layout_height="40dp"
+                    android:gravity="center_vertical"
+                    android:singleLine="true"></TextView>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="145dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="70dp"
+                    android:layout_height="40dp"
+                    android:layout_marginLeft="20dp"
+                    android:text="故障原因"
+                    android:textSize="15sp" />
+                <EditText
+                    android:id="@+id/faultre"
+                    android:layout_width="230dp"
+                    android:layout_height="140dp"
+                    android:hint="请输入故障原因"
+                    android:gravity="start"
+                    ></EditText>
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="160dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="70dp"
+                    android:layout_height="40dp"
+                    android:layout_marginLeft="20dp"
+                    android:text="修复报告"
+                    android:textSize="15sp" />
+
+                <EditText
+                    android:id="@+id/rere"
+                    android:layout_width="230dp"
+                    android:layout_height="186dp"
+                    android:gravity="start"
+                    android:hint="请输入..."></EditText>
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:orientation="horizontal">
+
+
+
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+        <com.example.dlsmywapplication.ProgressButton
+            android:id="@+id/progress_button"
+            android:layout_width="240dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="90dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="20dp"
+            android:text="生成修复报告"
+            android:textColor="@color/darkblue"
+            app:buttonColor="@color/main_blue"
+            app:cornerRadius="8dp"
+            app:progressBackColor="@color/ricewhile"
+            app:progressColor="@color/main_blue"
+            app:progressMargin="2dp" />
+
+        <include
+
+            layout="@layout/bottom_title"
+           ></include>
+
+
+    </LinearLayout>
+
+</ScrollView>

@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".UseActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="240dp"
+        android:paddingTop="30dp"
+        android:paddingBottom="10dp"
+        android:background="#F0FFFF">
+        <Button
+            android:id="@+id/Back"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_gravity="center"
+            android:layout_marginLeft="15dp"
+            android:background="@drawable/ic_left"
+            android:gravity="center"
+            android:textColor="@color/ricewhile"></Button>
+        <com.example.manager.RoundImageView
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_marginLeft="40dp"
+            android:layout_marginTop="40dp"
+            android:scaleType="centerInside"
+            android:src="@mipmap/gingerbread"
+            android:background="@color/ricewhile">
+
+        </com.example.manager.RoundImageView>
+
+        <TextView
+            android:id="@+id/user_name"
+            android:layout_width="140dp"
+            android:layout_height="30dp"
+            android:layout_marginLeft="155dp"
+            android:layout_marginTop="60dp"
+            android:gravity="center"
+            android:text="Jack"
+            android:textColor="@color/darkblue"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/user_num"
+            android:layout_width="200dp"
+            android:layout_height="20dp"
+            android:layout_marginLeft="150dp"
+            android:layout_marginTop="100dp"
+            android:gravity="center"
+            android:text="131XXXXXXXX"
+            android:textColor="@color/darkgray"
+
+
+            />
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="6">
+        <ScrollView
+            android:id="@+id/myScrollview"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:scrollbars="vertical"
+            android:fadingEdge="vertical">
+            <LinearLayout
+                android:id="@+id/linearLayout"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:background="@drawable/border_linear">
+                <com.example.manager.MenuItemLayout
+                    android:id="@+id/menuItemLayout_Info"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="16dp"
+                    app:divide_line_style="0"
+                    app:icon_reference="@drawable/ic_information"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="1.0"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:title_text="基本信息" />
+                <com.example.manager.MenuItemLayout
+                    android:id="@+id/menuItemLayout_Up"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    app:divide_line_style="1"
+                    app:icon_reference="@drawable/ic_upload"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="1.0"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:title_text="我的上报" />
+
+                <com.example.manager.MenuItemLayout
+                    android:id="@+id/menuItemLayout_Safe"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    app:divide_line_style="1"
+                    app:icon_reference="@drawable/ic_setting"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="1.0"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:title_text="重置密码" />
+
+                <com.example.manager.MenuItemLayout
+                    android:id="@+id/menuItemLayout_move"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    app:divide_line_style="1"
+                    app:icon_reference="@drawable/ic_setting"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="1.0"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:title_text="退出登录" />
+
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:background="@color/ricewhile"
+        android:layout_marginBottom="0dp"
+        android:layout_weight="1.5">
+        <include layout="@layout/bottom_title"></include>
+    </LinearLayout>
+</LinearLayout>

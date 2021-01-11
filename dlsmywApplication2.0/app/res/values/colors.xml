@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#008577</color>
+    <color name="colorPrimaryDark">#00574B</color>
+    <color name="colorAccent">#D81B60</color>
+    <color name="buttons">#24DEFA</color>
+    <color name="ricewhile">#f3f3f3</color>
+    <color name="darkblue">#3e6b9b</color>
+    <color name="lightblue">#bfe3f4</color>
+    <color name="white">#ffffff</color>
+    <color name="divide">#e6ebf0</color>
+    <color name="main_bg">#F3F3F3</color>
+    <color name="mc_txt_gray_bg">#a6a6a6</color>
+    <color name="ripple_color">#19333333</color>
+    <color name="darkgray">#a9a9a9</color><!--暗灰色 -->
+    <color name="result_view">#b0000000</color>
+    <color name="viewfinder_mask">#60000000</color>
+    <color name="possible_result_points">#c0ffff00</color>
+    <color name="main_blue">#8FDFF3</color>
+    <color name="scan_corner_color">#0effc2</color>
+    <color name="md_blue_800">#3086eb</color>
+    <color name="md_green_600">#48d866</color>
+    <color name="md_red_600">#ff6b5f</color>
+    <color name="md_yellow_800">#ffc122</color>
+</resources>

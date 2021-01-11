@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="MenuItemLayout">
+        <attr name="title_text" format="string" />
+        <attr name="hint_text" format="string" />
+        <attr name="icon_reference" format="reference" />
+        <attr name="icon_uri" format="string" />
+        <attr name="jump_url" format="string" />
+        <attr name="divide_line_style" format="integer" />
+
+    </declare-styleable>
+    <declare-styleable name="innerrect">
+        <attr name="inner_width" format="dimension"/><!-- 控制扫描框的宽度 -->
+        <attr name="inner_height" format="dimension"/><!-- 控制扫描框的高度 -->
+        <attr name="inner_margintop" format="dimension" /><!-- 控制扫描框距离顶部的距离 -->
+        <attr name="inner_corner_color" format="color" /><!-- 控制扫描框四角的颜色 -->
+        <attr name="inner_corner_length" format="dimension" /><!-- 控制扫描框四角的长度 -->
+        <attr name="inner_corner_width" format="dimension" /><!-- 控制扫描框四角的宽度 -->
+        <attr name="inner_scan_bitmap" format="reference" /><!-- 控制扫描图 -->
+        <attr name="inner_scan_speed" format="integer" /><!-- 控制扫描速度 -->
+        <attr name="inner_scan_iscircle" format="boolean" /><!-- 控制小圆点是否展示 -->
+    </declare-styleable>
+    <declare-styleable name="LoadingView">
+        <attr name="loadingText" format="string|reference"/>
+        <attr name="loadingTextAppearance" format="reference"/>
+        <attr name="delay" format="integer|reference"/>
+    </declare-styleable>
+
+    <!--按钮-->
+    <attr name="progressColor" format="color" />
+    <attr name="progressBackColor" format="color" />
+    <attr name="progress" format="integer" />
+    <attr name="minProgress" format="integer" />
+    <attr name="maxProgress" format="integer" />
+
+    <declare-styleable name="ProgressButton">
+        <attr name="progressColor" />
+        <attr name="progressBackColor" />
+        <attr name="buttonColor" format="color" />
+        <attr name="cornerRadius" format="dimension" />
+        <attr name="progress" />
+        <attr name="minProgress" />
+        <attr name="maxProgress" />
+        <attr name="progressMargin" format="dimension" />
+    </declare-styleable>
+
+    <declare-styleable name="CircleProgressBar">
+        <attr name="progress" />
+        <attr name="minProgress" />
+        <attr name="maxProgress" />
+        <attr name="progressColor" />
+        <attr name="progressBackColor" />
+        <attr name="progressWidth" format="dimension" />
+    </declare-styleable>
+</resources>

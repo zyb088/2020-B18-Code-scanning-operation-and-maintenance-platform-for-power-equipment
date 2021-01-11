@@ -1,0 +1,36 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+
+    </style>
+
+    <style name="CustomProgressDialog" parent="@android:style/Theme.Dialog">
+        <!--设置边框-->
+        <item name="android:windowFrame">@null</item>
+        <!--设置悬浮-->
+        <item name="android:windowIsFloating">true</item>
+        <!--设置覆盖-->
+        <item name="android:windowContentOverlay">@null</item>
+        <!--设置背景颜色-->
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <!--设置有无标题-->
+        <item name="android:windowNoTitle">false</item>
+        <!--设置透明-->
+        <item name="android:windowIsTranslucent">true</item>
+        <!--设置全屏-->
+        <item name="android:windowFullscreen">false</item>
+        <!--设置背景的暗色调-->
+        <item name="android:backgroundDimEnabled">false</item>
+        <item name="android:windowAnimationStyle">@android:style/Animation.Dialog</item>
+        <item name="android:windowSoftInputMode">stateUnspecified|adjustPan</item>
+    </style>
+
+
+    <style name="custom_dialog"></style>
+
+</resources>

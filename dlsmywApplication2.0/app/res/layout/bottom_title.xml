@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="70dp" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:background="@color/ricewhile"
+        tools:ignore="MissingConstraints"
+        android:orientation="horizontal">
+
+        <Button
+            android:layout_marginTop="5dp"
+            android:id="@+id/function"
+            android:layout_width="0dp"
+            android:layout_height="65dp"
+            android:layout_weight="1"
+            android:layout_gravity="center"
+            android:text="Function"
+            android:gravity="center"
+            android:background="@color/ricewhile"
+            android:drawableTop="@drawable/ic_function"
+            android:textColor="@color/darkblue"></Button>
+
+        <Button
+            android:layout_marginTop="5dp"
+            android:id="@+id/user"
+            android:layout_width="0dp"
+            android:layout_height="65dp"
+            android:layout_weight="1"
+            android:layout_gravity="center"
+            android:text="user"
+            android:gravity="center"
+            android:background="@color/ricewhile"
+            android:drawableTop="@drawable/ic_user"
+            android:textColor="@color/darkblue"></Button>
+
+
+
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

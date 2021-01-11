@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#bfe3f4"
+    tools:context=".TestActivity">
+
+    <RelativeLayout
+        android:layout_weight="1"
+        android:layout_marginTop="60dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/Pic"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/ic_save_energy"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="70dp"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="ELECTRIC"
+            android:textSize="50sp"
+            android:textColor="#0D1449"
+            android:textStyle="bold"
+            android:shadowRadius="4"
+            android:shadowDy="2"
+            android:shadowDx="2"
+            android:shadowColor="#000"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/Pic"
+            android:layout_margin="30dp"
+            />
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="30dp"
+        android:layout_weight="1">
+        <Button
+            android:id="@+id/ToNormalLogin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp"
+            android:drawableLeft="@drawable/ic_maintenance"
+            android:paddingLeft="20sp"
+            android:paddingRight="30sp"
+            android:text="普通工人"
+            android:textStyle="bold"
+            android:textSize="24sp"
+            android:textColor="@android:color/white"
+            android:background="@drawable/ripple_bg">
+        </Button>
+
+        <Button
+            android:id="@+id/ToWorkerLogin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp"
+            android:drawableLeft="@drawable/ic_wrench"
+            android:paddingLeft="20sp"
+            android:paddingRight="35sp"
+            android:text="维保工人"
+            android:textStyle="bold"
+            android:textSize="24sp"
+            android:textColor="@android:color/white"
+            android:background="@drawable/ripple_bg">
+        </Button>
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="100"
+        android:layout_marginBottom="10dp"
+        android:gravity="bottom|center"
+        android:text="版权所有，盗版必究\nV1.0.0"
+        android:textColor="#000"
+        android:textSize="16sp"/>
+
+</LinearLayout>

@@ -1,0 +1,518 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CheckActivity"
+    android:orientation="vertical"
+    >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <include layout="@layout/title"></include>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="4"
+            android:background="#8FDFF3" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="2"
+            android:background="#FFF" />
+
+        <include layout="@layout/bottom_title"></include>
+
+
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="430dp"
+        android:fillViewport="true"
+        android:scrollbars="vertical"
+        android:layout_marginTop="80dp">
+
+        <LinearLayout
+            android:layout_width="380dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="0dp"
+            android:background="@drawable/background_linear"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="100dp"
+                    android:layout_height="40dp"
+                    android:layout_marginLeft="50dp"
+                    android:gravity="center_vertical"
+                    android:text="设备等级"
+                    android:textSize="20sp" />
+
+                <RadioGroup
+                    android:id="@+id/check_level"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <RadioButton
+                        android:id="@+id/check_A"
+                        android:layout_width="wrap_content"
+                        android:layout_height="100px"
+                        android:text="A" />
+
+                    <RadioButton
+                        android:id="@+id/check_B"
+                        android:layout_width="wrap_content"
+                        android:layout_height="100px"
+                        android:text="B" />
+
+                    <RadioButton
+                        android:id="@+id/check_C"
+                        android:layout_width="wrap_content"
+                        android:layout_height="100px"
+                        android:text="C" />
+
+                    <RadioButton
+                        android:id="@+id/check_D"
+                        android:layout_width="wrap_content"
+                        android:layout_height="100px"
+                        android:text="D" />
+                </RadioGroup>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="100dp"
+                    android:layout_height="40dp"
+                    android:layout_marginLeft="50dp"
+                    android:gravity="center_vertical"
+                    android:text="设备编号"
+                    android:textSize="20sp"
+                    android:editable="false"/>
+
+                <EditText
+                    android:id="@+id/eq_number"
+                    android:layout_width="200dp"
+                    android:layout_height="40dp"
+                    android:gravity="center_vertical"
+                    android:hint="请输入设备编号"
+                    android:singleLine="true">
+                </EditText>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="100dp"
+                    android:layout_height="40dp"
+                    android:layout_marginLeft="50dp"
+                    android:gravity="center_vertical"
+                    android:text="设备名称"
+                    android:textSize="20sp" />
+
+                <EditText
+                    android:id="@+id/eq_name"
+                    android:layout_width="200dp"
+                    android:layout_height="40dp"
+                    android:gravity="center_vertical"
+                    android:hint="请输入设备名称"
+                    android:singleLine="true">
+                </EditText>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="100dp"
+                    android:layout_height="40dp"
+                    android:layout_marginLeft="50dp"
+                    android:gravity="center_vertical"
+                    android:text="安全电压"
+                    android:textSize="20sp" />
+
+                <EditText
+                    android:id="@+id/voltage_min"
+                    android:layout_width="70dp"
+                    android:layout_height="40dp"
+                    android:gravity="center_vertical"
+                    android:hint="最低电压"
+                    android:textSize="14sp"
+                    android:singleLine="true"
+                    android:inputType="number|numberDecimal">
+                </EditText>
+
+                <TextView
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:text="(V)"
+                    android:textSize="15sp" />
+                <TextView
+                android:layout_width="15dp"
+                android:layout_height="40dp"
+                android:text="---"
+                android:textSize="10sp"
+                />
+                <EditText
+                    android:id="@+id/voltage_max"
+                    android:layout_width="70dp"
+                    android:layout_height="40dp"
+                    android:gravity="center_vertical"
+                    android:hint="最高电压"
+                    android:textSize="14sp"
+                    android:singleLine="true"
+                    android:inputType="number|numberDecimal">
+                </EditText>
+
+                <TextView
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:gravity="center_vertical"
+                    android:text="(V)"
+                    android:textSize="15sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="180dp"
+                    android:layout_height="40dp"
+                    android:layout_marginLeft="50dp"
+                    android:gravity="center_vertical"
+                    android:text="设备运行是否正常"
+                    android:textSize="18sp" />
+
+                <RadioGroup
+                    android:id="@+id/check_state1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <RadioButton
+                        android:id="@+id/state1_Y"
+                        android:layout_width="wrap_content"
+                        android:layout_height="100px"
+                        android:text="是" />
+
+                    <RadioButton
+                        android:id="@+id/state1_N"
+                        android:layout_width="wrap_content"
+                        android:layout_height="100px"
+                        android:text="否" />
+
+                </RadioGroup>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="180dp"
+                    android:layout_height="80dp"
+                    android:layout_marginLeft="50dp"
+                    android:gravity="center_vertical"
+                    android:text="计量仪表、监测仪表及故障指示灯是否正常"
+                    android:textSize="17sp" />
+
+                <RadioGroup
+                    android:id="@+id/check_state2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <RadioButton
+                        android:id="@+id/state2_Y"
+                        android:layout_width="wrap_content"
+                        android:layout_height="100px"
+                        android:text="是" />
+
+                    <RadioButton
+                        android:id="@+id/state2_N"
+                        android:layout_width="wrap_content"
+                        android:layout_height="100px"
+                        android:text="否" />
+                </RadioGroup>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="180dp"
+                    android:layout_height="40dp"
+                    android:layout_marginLeft="50dp"
+                    android:gravity="center_vertical"
+                    android:text="配电回路是否正常"
+                    android:textSize="18sp" />
+
+                <RadioGroup
+                    android:id="@+id/check_state3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <RadioButton
+                        android:id="@+id/state3_Y"
+                        android:layout_width="wrap_content"
+                        android:layout_height="100px"
+                        android:text="是" />
+
+                    <RadioButton
+                        android:id="@+id/state3_N"
+                        android:layout_width="wrap_content"
+                        android:layout_height="100px"
+                        android:text="否" />
+
+                </RadioGroup>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="171dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="50dp"
+                    android:gravity="center_vertical"
+                    android:text="供电方式、母线状态是否正常"
+                    android:textSize="17sp" />
+
+                <RadioGroup
+                    android:id="@+id/check_state4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <RadioButton
+                        android:id="@+id/state4_Y"
+                        android:layout_width="wrap_content"
+                        android:layout_height="100px"
+                        android:text="是" />
+
+                    <RadioButton
+                        android:id="@+id/state4_N"
+                        android:layout_width="wrap_content"
+                        android:layout_height="100px"
+                        android:text="否" />
+
+                </RadioGroup>
+            </LinearLayout>
+
+            <!--<LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="180dp"
+                    android:layout_height="80dp"
+                    android:layout_marginLeft="50dp"
+                    android:gravity="center_vertical"
+                    android:text="电容器是否无放电、     鼓胀、漏油现象"
+                    android:textSize="17sp" />
+
+                <RadioGroup
+                    android:id="@+id/check_state5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <RadioButton
+                        android:id="@+id/state5_Y"
+                        android:layout_width="wrap_content"
+                        android:layout_height="100px"
+                        android:text="是" />
+
+                    <RadioButton
+                        android:id="@+id/state5_N"
+                        android:layout_width="wrap_content"
+                        android:layout_height="100px"
+                        android:text="否" />
+
+                </RadioGroup>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="180dp"
+                    android:layout_height="40dp"
+                    android:layout_marginLeft="50dp"
+                    android:gravity="center_vertical"
+                    android:text="三相电流是否平衡"
+                    android:textSize="18sp" />
+
+                <RadioGroup
+                    android:id="@+id/check_state6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <RadioButton
+                        android:id="@+id/state6_Y"
+                        android:layout_width="wrap_content"
+                        android:layout_height="100px"
+                        android:text="是" />
+
+                    <RadioButton
+                        android:id="@+id/state6_N"
+                        android:layout_width="wrap_content"
+                        android:layout_height="100px"
+                        android:text="否" />
+
+                </RadioGroup>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="180dp"
+                    android:layout_height="80dp"
+                    android:layout_marginLeft="50dp"
+                    android:gravity="center_vertical"
+                    android:text="室内'四防一通'情况是否良好"
+                    android:textSize="17sp" />
+
+                <RadioGroup
+                    android:id="@+id/check_state7"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <RadioButton
+                        android:id="@+id/state7_Y"
+                        android:layout_width="wrap_content"
+                        android:layout_height="100px"
+                        android:text="是" />
+
+                    <RadioButton
+                        android:id="@+id/state7_N"
+                        android:layout_width="wrap_content"
+                        android:layout_height="100px"
+                        android:text="否" />
+
+                </RadioGroup>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="180dp"
+                    android:layout_height="40dp"
+                    android:layout_marginLeft="50dp"
+                    android:gravity="center_vertical"
+                    android:text="室内外卫生是否清洁"
+                    android:textSize="18sp" />
+
+                <RadioGroup
+                    android:id="@+id/check_state8"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <RadioButton
+                        android:id="@+id/state8_Y"
+                        android:layout_width="wrap_content"
+                        android:layout_height="100px"
+                        android:text="是" />
+
+                    <RadioButton
+                        android:id="@+id/state8_N"
+                        android:layout_width="wrap_content"
+                        android:layout_height="100px"
+                        android:text="否" />
+
+                </RadioGroup>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="180dp"
+                    android:layout_height="40dp"
+                    android:layout_marginLeft="50dp"
+                    android:gravity="center_vertical"
+                    android:text="是否有其它故障"
+                    android:textSize="18sp" />
+
+                <RadioGroup
+                    android:id="@+id/check_state9"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <RadioButton
+                        android:id="@+id/state9_Y"
+                        android:layout_width="wrap_content"
+                        android:layout_height="100px"
+                        android:text="是" />
+
+                    <RadioButton
+                        android:id="@+id/state9_N"
+                        android:layout_width="wrap_content"
+                        android:layout_height="100px"
+                        android:text="否" />
+
+                </RadioGroup>
+            </LinearLayout>-->
+        </LinearLayout>
+    </ScrollView>
+    <com.example.dlsmywapplication.ProgressButton
+        android:id="@+id/progress_button"
+        android:layout_width="240dp"
+        android:layout_height="wrap_content"
+        android:textColor="@color/darkblue"
+        android:layout_marginTop="525dp"
+        android:layout_marginLeft="90dp"
+        android:text="Submit"
+        app:cornerRadius="8dp"
+        app:progressMargin="2dp"
+        app:progressBackColor="@color/ricewhile"
+        app:progressColor="@color/main_blue"
+        app:buttonColor="@color/main_blue"
+        />
+
+</RelativeLayout>

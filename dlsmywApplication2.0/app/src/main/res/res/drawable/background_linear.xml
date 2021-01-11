@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android">
+    <solid android:color="#F0F8FF" />   背景的颜色
+    <corners android:topLeftRadius="35px"
+        android:topRightRadius="35px"
+    android:bottomRightRadius="35px"
+    android:bottomLeftRadius="35px"/>    左下角的角度
+</shape>

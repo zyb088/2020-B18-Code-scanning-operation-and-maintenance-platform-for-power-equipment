@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".InformationActivity"
+    android:orientation="vertical"
+    >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <include layout="@layout/title"></include>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="4"
+            android:background="#8FDFF3" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="2"
+            android:background="#FFF" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:background="#FFF"
+            android:orientation="horizontal">
+            <Button
+                android:id="@+id/take_photo"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_marginLeft="100dp"
+                android:gravity="center"
+                android:layout_gravity="center"
+                android:background="@drawable/button_dra"
+                android:text="拍照"
+                android:textColor="@color/ricewhile"
+                android:textSize="10sp"></Button>
+            <Button
+                android:id="@+id/get_photo"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_marginLeft="35dp"
+                android:gravity="center"
+                android:layout_gravity="center"
+                android:background="@drawable/button_dra"
+                android:text="选择"
+                android:textColor="@color/ricewhile"
+                android:textSize="10sp"></Button>
+            <Button
+                android:id="@+id/submit_info"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_marginLeft="35dp"
+                android:gravity="center"
+                android:layout_gravity="center"
+                android:background="@drawable/button_dra"
+                android:text="提交"
+                android:textColor="@color/ricewhile"
+                android:textSize="10sp"></Button>
+        </LinearLayout>
+        <include layout="@layout/bottom_title"></include>
+
+
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="430dp"
+        android:fillViewport="true"
+        android:scrollbars="vertical"
+        android:layout_marginTop="80dp">
+
+        <LinearLayout
+            android:layout_width="380dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:background="@drawable/background_linear"
+            android:orientation="vertical">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="5dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="100dp"
+                    android:layout_height="40dp"
+                    android:layout_marginLeft="50dp"
+                    android:gravity="center_vertical"
+                    android:text="设备ID"
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:id="@+id/i_manufacturers"
+                    android:layout_width="200dp"
+                    android:layout_height="40dp"
+                    android:gravity="center_vertical"
+                    android:singleLine="true"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="100dp"
+                    android:layout_height="40dp"
+                    android:layout_marginLeft="50dp"
+                    android:gravity="center_vertical"
+                    android:text="使用人"
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:id="@+id/i_user"
+                    android:layout_width="200dp"
+                    android:layout_height="40dp"
+                    android:gravity="center_vertical"
+                    android:singleLine="true"/>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="100dp"
+                    android:layout_height="40dp"
+                    android:layout_marginLeft="50dp"
+                    android:gravity="center_vertical"
+                    android:text="使用时间"
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:id="@+id/i_date"
+                    android:layout_width="200dp"
+                    android:layout_height="40dp"
+                    android:gravity="center_vertical"
+                    android:singleLine="true"/>
+            </LinearLayout>
+
+            <View
+                android:id="@+id/check_photo"
+                android:layout_width="250dp"
+                android:layout_height="250dp"
+                android:layout_gravity="center"
+                android:background="@drawable/ic_activity_use"
+            />
+
+
+
+        </LinearLayout>
+    </ScrollView>
+
+
+
+
+</RelativeLayout>
